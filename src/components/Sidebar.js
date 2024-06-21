@@ -1,7 +1,9 @@
 import React from 'react';
 import { Menu } from 'primereact/menu';
+import { useAuth } from '../auth/useAuth';
 
 const Sidebar = () => {
+  const {signout} = useAuth();
   const items = [
     {
       label: "Dashboard",
@@ -37,6 +39,11 @@ const Sidebar = () => {
       command: () => {
         window.location.hash = "/admin/users";
       }
+    },
+    {
+      label: "Sign Out",
+      icon: "pi pi-sign-out",
+      command: () => signout()
     }
   ];
 

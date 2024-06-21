@@ -52,3 +52,12 @@ html{
   border: 0;
   width: 160px;
 }
+
+.login-panel {
+  width: 260px;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 16px;
+  text-align: center;
+  margin: 32px auto;
+}
