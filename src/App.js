@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import HomePage from "./pages/HomePage";
 import SignInPage from "./pages/SignInPage";
+import CategoryAdminPage from "./pages/admin/CategoryAdminPage";
 
 const App = () => {
   return (
@@ -15,6 +16,14 @@ const App = () => {
         element={
           <ProtectedRoute>
             <DashboardAdminPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/category"
+        element={
+          <ProtectedRoute>
+            <CategoryAdminPage />
           </ProtectedRoute>
         }
       />
