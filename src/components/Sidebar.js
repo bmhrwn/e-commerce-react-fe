@@ -27,9 +27,7 @@ const Sidebar = () => {
     {
       label: "Product",
       icon: "pi pi-box",
-      command: () => {
-        window.location.hash = "/admin/product";
-      },
+      command: () => {navigate('/admin/product') }
     },
     {
       label: "Users",
